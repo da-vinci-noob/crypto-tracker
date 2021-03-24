@@ -67,6 +67,18 @@ export default {
     }
   },
   mounted() {
+    axios
+      .get(`http://${location.host}/api/v1/balance`)
+      .then((response) => {
+        this.balance = response.data.data.balances
+        response.data.data.balances.map((value, key) => {
+          this.tree.children[0].children.push({
+            name: value.asset,
+            size: parseFloat(value.free) + parseFloat(value.locked)
+          })
+        })
+      })
+      .catch((error) => console.log(error))
   },
   methods: {}
 }
