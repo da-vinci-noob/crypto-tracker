@@ -12,13 +12,12 @@ import router from './router'
 document.addEventListener('DOMContentLoaded', () => {
   const app = new Vue({
     router,
-    render: h => h(App)
+    render: (h) => h(App)
   }).$mount()
   document.body.appendChild(app.$el)
 
   console.log(app)
 })
-
 
 // The above code uses Vue without the compiler, which means you cannot
 // use Vue to target elements in your existing html templates. You would
@@ -32,7 +31,6 @@ document.addEventListener('DOMContentLoaded', () => {
 //   {{message}}
 //   <app></app>
 // </div>
-
 
 // import Vue from 'vue/dist/vue.esm'
 // import App from '../app.vue'
