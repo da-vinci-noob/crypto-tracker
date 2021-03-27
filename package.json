@@ -11,13 +11,15 @@
     "vue": "^2.6.12",
     "vue-d3-sunburst": "^1.1.0",
     "vue-loader": "^15.9.5",
-    "vue-router": "^3.4.9"
+    "vue-router": "^3.4.9",
+    "vue-template-compiler": "^2.6.12"
   },
   "version": "0.1.0",
   "devDependencies": {
     "@prettier/plugin-ruby": "^1.5.1",
     "prettier": "^2.2.1",
     "@tailwindcss/postcss7-compat": "^2.0.4",
+    "@types/lodash": "^4.14.168",
     "autoprefixer": "^9",
     "postcss": "^7",
     "tailwindcss": "npm:@tailwindcss/postcss7-compat",
